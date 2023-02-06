@@ -29,7 +29,7 @@ def rank_r(key: int, a: list) -> int:
         else:
             return mid
 
-    return rank(key, a, 0, len(a)-1)
+    return inner_rank_r(key, a, 0, len(a)-1)
 
 if __name__ == '__main__':
     whilelist = None
